@@ -1,0 +1,36 @@
+.input-size {
+  width: 30%;
+}
+.vertical-line {
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  width: 1px;
+  height: 85vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+.payments {
+  height: 45%;
+}
+.payment-system {
+  height: 90vh;
+}
+@media only screen and (max-width: 600px) {
+  .payments {
+    height: 30%;
+  }
+  .vertical-line {
+    border: 0;
+    width: 0;
+    height: 0;
+  }
+  .payment-system {
+    height: 60vh;
+  }
+}

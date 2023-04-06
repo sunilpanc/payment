@@ -1,0 +1,15 @@
+<div
+  class="d-flex mt-4 justify-content-between align-items-center gap-3"
+  *ngIf="amount"
+>
+  <label class="form-label">{{ paymentType }}</label>
+  <hr width="70%" />
+  <span>{{ amount }}</span>
+  <button
+    class="btn btn-danger"
+    (click)="deletePayment()"
+    *ngIf="paymentType !== 'Credit'"
+  >
+    Delete
+  </button>
+</div>
